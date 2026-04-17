@@ -1,16 +1,9 @@
 import os
 
-os.system("sudo apt update && sudo apt install p7zip-full wget nginx git -y")
+os.system("sudo apt update && sudo apt install wget nginx git -y")
 os.system("wget https://raw.githubusercontent.com/Invizabel/Scripts/refs/heads/main/Setup/docker_ubuntu.py")
 os.system("python3 docker_ubuntu.py")
-os.system("wget https://buildbot.libretro.com/stable/1.17.0/emscripten/RetroArch.7z")
-os.system("7z x RetroArch.7z")
 os.system("git clone https://github.com/ppeccin/javatari.js")
 os.system("git clone https://github.com/mitxela/swotGB")
-os.system("git clone https://github.com/TimWoelfle/PlainChess")
-os.system("sudo cp -r retroarch/* /var/www/html/retroarch")
-os.system("sudo cp -r javatari.js/release/stable/5.0/standalone/* /var/www/html/javatari")
 os.system("sudo cp -r swotGB/gbjs.htm /var/www/html/swotgb/index.html")
-os.system("wget https://raw.githubusercontent.com/Invizabel/Web-EMU/refs/heads/main/index.html")
-os.system("sudo cp index.html /var/www/html/index.html")
 os.system("sudo docker run -d --name=webrcade -p 8080:80 -p 8443:443 --restart always webrcade/webrcade:latest")
