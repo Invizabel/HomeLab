@@ -1,4 +1,4 @@
-## Scripts that allows you to run home lab services.
+## Scripts that allows you to run home lab services!
 
 ##### Emulators:
 * SWOTGB (Gameboy)
