@@ -10,7 +10,7 @@
 * PlainChess (Chess)
 * Minecraft (Classic)
 
-#### Life Style:
+#### Lifestyle:
 * Mealie (Food)
 
 ###### Please Note:
