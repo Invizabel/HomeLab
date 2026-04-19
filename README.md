@@ -23,6 +23,5 @@
 * Forgejo (Git)
 
 ###### Please Note:
-* These projects will work with Ubuntu Linux.
-* You will need a separate nginx server for each service.
+* These projects are designed to work with Ubuntu Linux. No other operating systems are supported.
 * If you plan on hosting more than one, I recommend checking out proxmox: https://www.proxmox.com
