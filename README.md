@@ -16,6 +16,9 @@
 #### Utilities:
 * Draw.IO (Diagramming)
 
+#### Game Servers:
+* Java (Minecraft Java)
+
 ###### Please Note:
 * These projects will work with Ubuntu Linux.
 * You will need a separate nginx server for each service.
