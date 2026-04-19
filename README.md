@@ -1,6 +1,6 @@
 ## Scripts that allows you to run home lab services!
 
-##### Emulators:
+#### Emulators:
 * SWOTGB (Gameboy)
 * Javatari (Atari 2600)
 * Retroarch (General)
