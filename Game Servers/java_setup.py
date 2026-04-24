@@ -17,7 +17,7 @@ for i in content["versions"]:
         if users_os == "windows":
             print(f"Found version {version} {i['type']} @ {content['downloads']['windows_server']['url']}.")
             content = requests.get(content['downloads']['windows_server']['url'], headers={"User-Agent": "Mozilla/5.0 (Minecraft Server Manager)"}, timeout=10).content
-            with open(f"{version}.jar","wb") as file:
+            with open(f"server.jar","wb") as file:
                 file.write(content)
         else: 
             home_directory = "/".join(os.getcwd().split("/")[:3])
@@ -26,10 +26,10 @@ for i in content["versions"]:
             print(f"Downloading: {version}.")
             
             content = requests.get(content['downloads']['server']['url'], headers={"User-Agent": "Mozilla/5.0 (Minecraft Server Manager)"}, timeout=10).content
-            with open(f"{home_directory}/{version}.jar","wb") as file:
+            with open(f"{home_directory}/server.jar","wb") as file:
                 file.write(content)
             
-            if os.path.exists(f"{home_directory}/{version}.jar") and os.path.getsize(f"{home_directory}/{version}.jar") > 1024:
+            if os.path.exists(f"{home_directory}/server.jar") and os.path.getsize(f"{home_directory}/server.jar") > 1024:
                 print("Download successful.")
                 devnull = open(os.devnull,"w")
                 retval = subprocess.call(["dpkg","-s","default-jre"],stdout=devnull,stderr=subprocess.STDOUT)
@@ -46,7 +46,7 @@ for i in content["versions"]:
                         os.mkdir(version)
                     os.chdir(home_directory)
                     
-                    shutil.copy(f"{version}.jar", f"Server/{version}/{version}.jar")
+                    shutil.copy(f"server.jar", f"Server/{version}/server.jar")
                     
                     print("Accepting EULA.")
                     with open(f"{home_directory}/Server/{version}/eula.txt", "w") as file:
@@ -54,8 +54,7 @@ for i in content["versions"]:
 
                     os.chdir(f"{home_directory}/Server/{version}")
                     print("Running server.")
-                    os.system(f"java -jar {version}.jar --nogui")
-                    os.system("java -jar server.jar --nogui")
+                    os.system(f"java -jar server.jar --nogui")
 
                 else:
                     print("Package default-jre not installed. Please install it.")
