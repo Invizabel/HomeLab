@@ -24,7 +24,7 @@
 
 #### Crontabs:
 * Bedrock (Start Minecraft Bedrock at Boot)
-* Bedrock (Start Minecraft Java at Boot)
+* Java (Start Minecraft Java at Boot)
 
 ###### Please Note:
 * These projects are designed to work with Ubuntu Linux. No other operating systems are supported at this time.
