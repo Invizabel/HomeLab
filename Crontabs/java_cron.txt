@@ -1,0 +1,1 @@
+@reboot /bin/bash -c "cd /home/<user>/<world folder> && /usr/bin/screen -dmS java /usr/bin/java -jar server.jar --nogui"
