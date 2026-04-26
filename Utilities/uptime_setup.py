@@ -1,8 +1,8 @@
 import os
 
 conf = """server {
-    listen 80;
-    server_name uptime.arpa;
+    listen 80 default_server;
+    server_name _;
 
     location / {
         proxy_pass         http://localhost:3001;
@@ -44,5 +44,5 @@ os.system("sudo pm2 startup")
 os.system("sudo apt install nginx -y")
 with open("uptime-kuma.conf","w") as file:
     file.write(conf)
-os.system("sudo mv uptime-kuma.conf /etc/nginx/conf.d/uptime-kuma.conf")
+os.system("sudo mv uptime-kuma.conf /etc/nginx/sites-available/")
 os.system("sudo systemctl restart nginx")
