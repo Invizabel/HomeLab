@@ -28,9 +28,6 @@ conf = """server {
     # return 301 https://$host$request_uri;
 }"""
 
-with open("uptime-kuma.conf","w") as file:
-    file.write(conf)
-
 os.mkdir("app")
 os.chdir("app")
 os.system("sudo apt update")
@@ -45,5 +42,7 @@ os.system("sudo pm2 install pm2-logrotate")
 os.system("pm2 start server/server.js --name uptime-kuma")
 os.system("sudo pm2 startup")
 os.system("sudo apt install nginx -y")
+with open("uptime-kuma.conf","w") as file:
+    file.write(conf)
 os.system("sudo mv uptime-kuma.conf /etc/nginx/conf.d/uptime-kuma.conf")
 os.system("sudo systemctl restart nginx")
