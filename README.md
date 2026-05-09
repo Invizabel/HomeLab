@@ -27,6 +27,7 @@
 #### Crontabs:
 * Bedrock (Start Minecraft Bedrock at Boot)
 * Java (Start Minecraft Java at Boot)
+* Uptime (Start Uptime Kuma at Boot)
 
 ###### Please Note:
 * These projects are designed to work with Ubuntu Linux. No other operating systems are supported at this time.
