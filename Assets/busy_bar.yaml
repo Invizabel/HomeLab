@@ -1,0 +1,7 @@
+rest_command:
+  push_sensors:
+    url: "http://example.com:80/pending_api_endpoint_here"
+    method: "post"
+    payload: '{"soil sensor": 50}'
+    content_type: "application/json"
+  
