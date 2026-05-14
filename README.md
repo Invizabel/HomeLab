@@ -11,6 +11,7 @@
 
 #### Development:
 * Forgejo (Git)
+* Hoppscotch (API)
 
 #### Emulators:
 * SWOTGB (Gameboy)
