@@ -1,6 +1,7 @@
 FROM ubuntu:26.04
 RUN apt update
 RUN apt upgrade -y
+RUN apt install curl -y
 RUN apt install python3 -y
 RUN apt install python3-requests -y
 RUN apt install default-jre -y
