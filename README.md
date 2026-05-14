@@ -13,6 +13,9 @@
 * Forgejo (Git)
 * Hoppscotch (API)
 
+#### Docker:
+* Java (Minecraft Java Auto Update)
+
 #### Emulators:
 * SWOTGB (Gameboy)
 * Javatari (Atari 2600)
