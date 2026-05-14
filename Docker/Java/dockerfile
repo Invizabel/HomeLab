@@ -9,9 +9,9 @@ RUN apt install unattended-upgrades -y
 RUN dpkg-reconfigure unattended-upgrades
 RUN apt autoremove -y
 RUN apt autoclean
-RUN curl https://raw.githubusercontent.com/Invizabel/HomeLab/refs/heads/main/Game%20Servers/java_latest.py | python3
 EXPOSE 22
 EXPOSE 25565
 RUN useradd app
 WORKDIR /home/app/
+COPY wget https://raw.githubusercontent.com/Invizabel/HomeLab/refs/heads/main/Game%20Servers/java_latest.py
 USER app
