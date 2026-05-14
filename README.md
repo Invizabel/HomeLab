@@ -1,5 +1,18 @@
 ## Scripts that allows you to run home lab services!
 
+#### Assets:
+* Docker (container)
+* ha2busybar (push home assistant data to Busy Bar)
+
+#### Crontabs:
+* Bedrock (Start Minecraft Bedrock at Boot)
+* Java (Start Minecraft Java at Boot)
+* Uptime (Start Uptime Kuma at Boot)
+
+#### Development:
+* Forgejo (Git)
+* Hoppscotch (API)
+
 #### Emulators:
 * SWOTGB (Gameboy)
 * Javatari (Atari 2600)
@@ -10,6 +23,9 @@
 * PlainChess (Chess)
 * Minecraft (Classic)
 
+#### Game Servers:
+* Java (Minecraft Java)
+
 #### Lifestyle:
 * Mealie (Food)
 * FreshRSS (News Feed)
@@ -17,18 +33,6 @@
 #### Utilities:
 * Draw.IO (Diagramming)
 * Uptime Kuma (Server Monitoring)
-
-#### Game Servers:
-* Java (Minecraft Java)
-
-#### Development:
-* Forgejo (Git)
-* Hoppscotch (API)
-
-#### Crontabs:
-* Bedrock (Start Minecraft Bedrock at Boot)
-* Java (Start Minecraft Java at Boot)
-* Uptime (Start Uptime Kuma at Boot)
 
 ###### Please Note:
 * These projects are designed to work with Ubuntu Linux. No other operating systems are supported at this time.
