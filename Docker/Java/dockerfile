@@ -1,0 +1,16 @@
+FROM ubuntu:26.04
+WORKDIR /usr/local/app
+RUN apt update
+RUN apt upgrade -y
+RUN apt install python3 -y
+RUN apt install python3-requests -y
+RUN apt install default-jre -y
+RUN apt install unattended-upgrades -y
+RUN dpkg-reconfigure unattended-upgrades
+RUN apt autoremove -y
+RUN apt autoclean
+RUN curl https://raw.githubusercontent.com/Invizabel/HomeLab/refs/heads/main/Game%20Servers/java_latest.py | python3
+EXPOSE 22
+EXPOSE 25565
+RUN useradd app
+USER app
