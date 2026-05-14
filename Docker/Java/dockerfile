@@ -14,5 +14,5 @@ EXPOSE 25565
 RUN useradd app
 WORKDIR /home/app/
 COPY java_latest.py /home/app/
-RUN chmod 755 /home/app/
+RUN chmod 777 /home/app/
 USER app
