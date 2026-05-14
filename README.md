@@ -23,6 +23,7 @@
 
 #### Development:
 * Forgejo (Git)
+* Hoppscotch (API)
 
 #### Crontabs:
 * Bedrock (Start Minecraft Bedrock at Boot)
