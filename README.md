@@ -8,6 +8,7 @@
 * Bedrock (Start Minecraft Bedrock at Boot)
 * Java (Start Minecraft Java at Boot)
 * Uptime (Start Uptime Kuma at Boot)
+* ErsatzTV (Start ErsatzTV at Boot)
 
 #### Development:
 * Flipper Build All Apps (compile all binaries for user submitted Flipper Zero apps)
