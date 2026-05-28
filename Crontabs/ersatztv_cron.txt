@@ -1,0 +1,1 @@
+@reboot /bin/bash -c "cd /home/<user>/ersatztv && /usr/bin/screen -dmS ErsatzTV ./ErsatzTV"
