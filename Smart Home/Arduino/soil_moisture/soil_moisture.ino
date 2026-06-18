@@ -22,6 +22,6 @@ void loop()
     }
 
     // Wait an hour before testing soil moisture and beeping the Piezo if required
-    delay(60000);
+    delay(3600000);
   }
 }
