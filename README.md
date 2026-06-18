@@ -36,7 +36,7 @@
 * FreshRSS (News Feed)
 
 #### Smart Home:
-* Arduino/Soild Moisture (Soil Moisture Detecter)
+* Arduino/Soil Moisture (Soil Moisture Detecter)
 
 #### Utilities:
 * Draw.IO (Diagramming)
