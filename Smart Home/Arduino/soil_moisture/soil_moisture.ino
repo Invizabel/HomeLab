@@ -1,7 +1,7 @@
 #define PIEZO_PIN  9 // Pin connected to the piezo buzzer.
 
 int tone_freq = 400;
-int tone_count = 3;
+int tone_count = 8;
 
 void setup()
 {
@@ -21,7 +21,7 @@ void loop()
       delay(1000);
     }
 
-    // Wait an hour before testing soil moisture and beeping the Piezo if required
-    delay(3600000);
+    // Wait 15 minutes before testing soil moisture and beep the Piezo if required
+    delay(900000);
   }
 }
