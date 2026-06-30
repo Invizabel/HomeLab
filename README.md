@@ -32,9 +32,6 @@
 * Mealie (Food)
 * FreshRSS (News Feed)
 
-#### Smart Home:
-* Arduino/Soil Moisture (Soil Moisture Detecter)
-
 #### Utilities:
 * Draw.IO (Diagramming)
 * Uptime Kuma (Server Monitoring)
