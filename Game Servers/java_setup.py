@@ -47,11 +47,12 @@ for i in content["versions"]:
                     os.chdir(home_directory)
                     
                     shutil.copy(f"server.jar", f"Server/{version}/server.jar")
+                    os.remove("server.jar")
                     
                     print("Accepting EULA.")
                     with open(f"{home_directory}/Server/{version}/eula.txt", "w") as file:
                         file.write("eula=true")
-
+                        
                     os.chdir(f"{home_directory}/Server/{version}")
                     print("Running server.")
                     os.system(f"java -jar server.jar --nogui")
