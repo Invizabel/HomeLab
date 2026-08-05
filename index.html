@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Home Lab Projects</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Georgia, "Times New Roman", serif;
+                background: #f4f4f4;
+                color: #333;
+                line-height: 1.8;
+            }
+
+            header {
+                background: linear-gradient(135deg, #2c3e50, #4ca1af);
+                color: white;
+                padding: 60px 20px;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 3em;
+                margin-bottom: 10px;
+            }
+
+            header p {
+                opacity: .9;
+                font-size: 1.2em;
+            }
+
+            main {
+                max-width: 900px;
+                margin: 40px auto;
+                background: white;
+                padding: 40px;
+                border-radius: 12px;
+                box-shadow: 0 5px 20px rgba(0,0,0,.1);
+            }
+
+            section {
+                margin-bottom: 50px;
+            }
+
+            h2 {
+                color: #2c3e50;
+                margin-bottom: 20px;
+                border-left: 6px solid #4ca1af;
+                padding-left: 12px;
+            }
+
+            p {
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+
+            blockquote {
+                margin: 25px;
+                padding: 20px;
+                background: #eef7fa;
+                border-left: 5px solid #4ca1af;
+                font-style: italic;
+            }
+
+            footer {
+                text-align: center;
+                padding: 30px;
+                color: #666;
+            }
+
+            @media (max-width: 700px) {
+                header h1 {
+                    font-size: 2em;
+                }
+
+                main {
+                    padding: 25px;
+                    margin: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Home Lab Projects</h1>
+            <p>From Home Lab And Beyond!</p>
+        </header>
+        <main>
+            <section>
+                <h2>Minecraft Java Server</h2>
+                <p>
+                    Materials:
+                    <br>
+                    * Minecraft Java client software: https://www.minecraft.net/en-us/download 
+                    <br>
+                    * Minecraft Java server software for Ubuntu Linux: https://www.minecraft.net/en-us/download
+                    <br>
+                    * A server or Promox VM running Ubuntu Server with at least 1 core and 2 GB of memory.
+                    <br>
+                    * Ubuntu package installed for Minecraft Java server to run: "default-jre"
+                    <br>
+                    * Ubuntu package installed for remote management (usually installed by default): "openssh-server"
+                    <br>
+                    * Ubuntu package installed for grabbing the Minecraft Java server software: "wget"
+                </p>
+
+                <p>
+                    Steps:
+                    <br>
+                    1) After install, get the ip address of your Minecraft java server: "ip a"
+                    <br>
+                    2) Remote into your Minecraft Java server with Powershell (Windows) or Terminal (MacOS/Linux): "ssh username@ip_address"
+                    <br>
+                    3)  Make sure everything is up to date: "sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean"
+                    <br>
+                    4) Install the Java Runtime Environment on the server: "sudo apt install default-jre -y"
+                    <br>
+                    5) Install the tool we will use to get the Minecraft Java server software: "sudo apt install wget -y"
+                    <br>
+                    6) Grab the Minecraft Java server software. On your client machine, open a browser and go to: https://www.minecraft.net/en-us/download and scroll down until you see " Minecraft server software Java Edition Server", click on it. then where it says download: right-click > Copy Link. It should end in "server.jar"
+                    <br>
+                    7) Next, on the Minecraft Java server that you are remoted into: "wget link_to_server.jar
+                    <br>
+                    8) You should now see a file called server.jar in your home directory. To see it: "ls -l"
+                    <br>
+                    9) Next, we will run it: "java -jar server.jar --nogui"
+                    <br>
+                    TODO
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
