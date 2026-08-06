@@ -54,7 +54,7 @@
 
             p {
                 margin-bottom: 20px;
-                text-align: justify;
+                text-align: left;
             }
 
             blockquote {
@@ -98,7 +98,7 @@
                     <br>
                     * Minecraft Java server software for Ubuntu Linux: https://www.minecraft.net/en-us/download
                     <br>
-                    * A server or Promox VM running Ubuntu Server with at least 1 core and 2 GB of memory.
+                    * A server or Promox VM running Ubuntu Server with at least 2 core and 4 GB of memory
                     <br>
                     * Ubuntu package installed for Minecraft Java server to run: "default-jre"
                     <br>
@@ -120,18 +120,57 @@
                     <br>
                     5) Install the tool we will use to get the Minecraft Java server software: "sudo apt install wget -y"
                     <br>
-                    6) Grab the Minecraft Java server software. On your client machine, open a browser and go to: https://www.minecraft.net/en-us/download and scroll down until you see " Minecraft server software Java Edition Server", click on it. then where it says download: right-click > Copy Link. It should end in "server.jar"
+                    6) Grab the Minecraft Java server software. On your client machine, open a browser and go to: https://www.minecraft.net/en-us/download and scroll down until you see " Minecraft server software Java Edition Server", click on it. then where it says download: right-click > Copy Link Address. It should end in "server.jar"
                     <br>
                     7) Next, on the Minecraft Java server that you are remoted into: "wget link_to_server.jar
                     <br>
                     8) You should now see a file called server.jar in your home directory. To see it: "ls -l"
                     <br>
-                    9) Next, we will run it: "java -jar server.jar --nogui"
+                    9) Now, we are going to create a base folder for the server to live in: "mkdir JAVA"
                     <br>
-                    TODO
+                    10) Next, we are going to create a folder for the current version we download inside the base folder: "mkdir JAVA/1.x.x" where 1.x.x is the exact version
                     <br>
+                    11) Now, we are going to copy the server.jar file into the version folder: "mv server.jar JAVA/1.x.x"
                     <br>
+                    12) Let's navigate to the folder where the server.jar lives in: "cd JAVA/1.x.x"
                     <br>
+                    13) Next, we will run it: "java -jar server.jar --nogui"
+                    <br>
+                    14) You should now see that you need to accept the eula. To do this: "nano eula.txt" > "eula=true" > "control + x, y, enter"
+                    <br>
+                    15) Next, let's re-run it: "java -jar server.jar --nogui" wait for it to finish then: "control + c"
+                    <br>
+                    16) Let's configure the serer: "nano server.properties" to open the config file. Add the features you want. To save it: "control + x, y, enter"
+                    <br>
+                    17) Let's make sure the server starts at boot: "sudo apt install screen -y"
+                    <br>
+                    18) Let's start a crontab: "crontab -e. > nano"
+                    <br>
+                    19) At the bottom paste this: @reboot /bin/bash -c "cd /home/<user>/<world folder> && /usr/bin/screen -dmS java /usr/bin/java -jar server.jar --nogui"
+                    <br>
+                    20) To save the crontab: "control + x, y, enter"
+                    <br>
+                    21) Test by rebooting the server: "sudo reboot" and trying to connect via the Minecraft Java client
+                    <br>
+                </p>
+            </section>
+
+            <section>
+                <h2>Volor Savanna</h2>
+                <p>
+                     Materials:
+                    <br>
+                    * nginx server
+                    <br>
+                    * A server or Promox VM running Ubuntu Server with at least 1 core and 2 GB of memory
+                </p>
+
+                <p>
+                    Steps:
+                    <br>
+                    1) After install, run: "curl https://raw.githubusercontent.com/Invizabel/HomeLab/refs/heads/main/Games/savanna_setup.py | python3"
+                    <br>
+                    2) Test it by visiting the IP address in a browser. To get the ip address: "ip a"
                 </p>
             </section>
         </main>
