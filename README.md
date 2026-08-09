@@ -23,7 +23,7 @@
 
 #### Games:
 * PlainChess (Chess)
-* * Java (Minecraft Java)
+* Java (Minecraft Java)
 * Minecraft (Classic)
 
 #### Lifestyle:
