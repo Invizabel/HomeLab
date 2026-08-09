@@ -23,10 +23,8 @@
 
 #### Games:
 * PlainChess (Chess)
+* * Java (Minecraft Java)
 * Minecraft (Classic)
-
-#### Game Servers:
-* Java (Minecraft Java)
 
 #### Lifestyle:
 * Mealie (Food)
