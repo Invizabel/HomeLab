@@ -1,7 +1,7 @@
 import os
 
 os.system("sudo apt update")
-os.system("wget https://raw.githubusercontent.com/Invizabel/VolorSavannaWeb/refs/heads/main/index.html")
+os.system("wget https://raw.githubusercontent.com/Invizabel/savanna/refs/heads/main/index.html")
 os.system("wget https://raw.githubusercontent.com/Invizabel/HomeLab/refs/heads/main/Assets/docker_setup.py")
 os.system("python3 docker_setup.py")
 os.system("touch dockerfile")
