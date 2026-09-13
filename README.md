@@ -21,7 +21,6 @@
 * WebЯcade (General)
 
 #### Games:
-* PlainChess (Chess)
 * Java (Minecraft Java)
 * Minecraft (Classic)
 
