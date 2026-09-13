@@ -13,7 +13,6 @@
 #### Development:
 * Flipper Build All Apps (compile all binaries for user submitted Flipper Zero apps)
 * Forgejo (Git)
-* Hoppscotch (API)
 
 #### Emulators:
 * SWOTGB (Gameboy)
