@@ -1,7 +1,7 @@
 import os
 
 os.system("sudo apt update")
-os.system("sudo apt install git npm nodejs nginx")
+os.system("sudo apt install git npm nodejs nginx -y")
 os.system("sudo rm -r /var/www/html/*")
 os.system("git clone https://github.com/httpcats/http.cat")
 os.system("npm install next")
