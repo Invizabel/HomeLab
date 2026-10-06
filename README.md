@@ -11,8 +11,9 @@
 * ErsatzTV (Start ErsatzTV at Boot)
 
 #### Development:
-* Flipper Build All Apps (compile all binaries for user submitted Flipper Zero apps)
+* Flipper Build All Apps (Compile All Binaries For User Submitted Flipper Zero Apps)
 * Forgejo (Git)
+* HTTP.Cat (HTTP Status Codes)
 
 #### Emulators:
 * SWOTGB (Gameboy)
