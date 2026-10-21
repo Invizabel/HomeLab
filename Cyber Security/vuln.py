@@ -1,6 +1,6 @@
 import os
 
-os.system("sudo apt update && sudo apt install curl default-jre")
+os.system("sudo apt update && sudo apt install curl default-jre -y")
 
 # log4shell flaw
 os.system("mkdir Minecraft")
