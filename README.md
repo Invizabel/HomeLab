@@ -10,6 +10,9 @@
 * Uptime (Start Uptime Kuma at Boot)
 * ErsatzTV (Start ErsatzTV at Boot)
 
+# Cyber Security:
+* Vuln (Downloads vulnerable software)
+
 #### Development:
 * Flipper Build All Apps (Compile All Binaries For User Submitted Flipper Zero Apps)
 * Forgejo (Git)
