@@ -1,6 +1,6 @@
 tell application "System Events"
 	
-	set blocks to {"bamboo_block", "birch_log", "diamond_ore", "gold_ore", "grass_block", "moss_block", "iron_ore", "oak_log", "purpur_block", "redstone_ore", "stone"}
+	set blocks to {"bamboo_block", "birch_log", "calcite", "diamond_ore", "dripstone_block", "gold_ore", "grass_block", "moss_block", "iron_ore", "oak_log", "podzol", "purpur_block", "redstone_ore", "stone", "tuff"}
 	
 	-- Launch Minecraft to the front
 	
@@ -16,9 +16,9 @@ tell application "System Events"
 	key code 53
 	delay 0.5
 	
-	repeat with x from 0 to 95 by 5
-		repeat with y from 0 to 95 by 5
-			repeat with z from 0 to 95 by 5
+	repeat with x from 0 to 75 by 5
+		repeat with y from 0 to 75 by 5
+			repeat with z from 0 to 75 by 5
 				set random_block to some item of blocks
 				
 				-- Open chat Enter == 36 OR T == 17
@@ -76,8 +76,8 @@ tell application "System Events"
 					delay 0.5
 					
 					-- Execute the command
-				key code 36 -- Return
-				delay 0.5
+					key code 36 -- Return
+					delay 0.5
 				end if
 			end repeat
 		end repeat
