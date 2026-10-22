@@ -12,7 +12,7 @@ with open("eula.txt", "w") as file:
   file.write("eula=true")
 
 # create persistance
-os.system('sudo echo @reboot /bin/bash -c "cd /home/$(vuln)/Minecraft && /usr/bin/screen -dmS java /usr/bin/java -jar server.jar --nogui" > /var/spool/cron/$(whoami)')
+os.system('sudo echo @reboot /bin/bash -c "cd /home/$(whoami)/Minecraft && /usr/bin/screen -dmS java /usr/bin/java -jar server.jar --nogui" > /var/spool/cron/$(whoami)')
 
 # Reboot for changes to take affect
 os.system("reboot")
