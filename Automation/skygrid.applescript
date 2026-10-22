@@ -1,6 +1,6 @@
 tell application "System Events"
 	
-	set blocks to {"bamboo_block", "burch_log", "diamond_ore", "gold_ore", "grass_block", "moss_block", "iron_ore", "oak_log", "purpur_block","redstone_ore", "stone"}
+	set blocks to {"bamboo_block", "birch_log", "diamond_ore", "gold_ore", "grass_block", "moss_block", "iron_ore", "oak_log", "purpur_block", "redstone_ore", "stone"}
 	
 	-- Launch Minecraft to the front
 	
