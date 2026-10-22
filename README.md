@@ -4,6 +4,9 @@
 * Docker (container)
 * ha2busybar (push home assistant data to Busy Bar)
 
+#### Automation:
+* SkyGrid (Minecraft SkyGrid Remastered Map Creator for MacOS)
+
 #### Crontabs:
 * Bedrock (Start Minecraft Bedrock at Boot)
 * Java (Start Minecraft Java at Boot)
