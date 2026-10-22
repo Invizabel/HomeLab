@@ -3,7 +3,7 @@ import os
 os.system("sudo apt update && sudo apt install curl default-jre screen -y")
 
 # log4shell flaw
-os.system("mkdir ~Minecraft")
+os.system("mkdir ~/Minecraft")
 os.chdir("~Minecraft")
 
 # 1.7.10
