@@ -1,9 +1,10 @@
+-- Each delay is 5 seconds due to weird stuff happening in Minecraft if this script goes too fast
+
 tell application "System Events"
 	
 	set blocks to {"bamboo_block", "burch_log", "diamond_ore", "gold_ore", "grass_block", "moss_block", "iron_ore", "oak_log", "purpur_block", "redstone_ore", "stone"}
 	
 	-- Launch Minecraft to the front
-	
 	tell application "System Events"
 		tell process "java"
 			set frontmost to true
