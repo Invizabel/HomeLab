@@ -12,7 +12,7 @@ with open("eula.txt", "w") as file:
   file.write("eula=true")
 
 # create persistance
-os.system('(crontab -l ; echo @reboot /bin/bash -c \"cd /home/$(whoami)/Minecraft && /usr/bin/screen -dmS java /usr/bin/java -jar server.jar --nogui\") | crontab -')
+os.system(r'(crontab -l ; echo @reboot /bin/bash -c "cd /home/$(whoami)/Minecraft && /usr/bin/screen -dmS java /usr/bin/java -jar server.jar --nogui") | crontab -')
 
 # Reboot for changes to take affect
 os.system("reboot")
