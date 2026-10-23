@@ -1,7 +1,7 @@
 tell application "System Events"
 	
-	set blocks to {"acacia_log", "acacia_planks", "bamboo_block", "birch_log", "calcite", "diamond_ore", "dripstone_block", "gold_ore", "grass_block", "moss_block", "iron_ore", "oak_log", "podzol", "purpur_block", "redstone_ore", "stone", "tuff"}
-	set entities to {"acacia_button", "acacia_sapling"}
+	set blocks to {"acacia_log", "acacia_planks", "acacia_wood", "bamboo_block", "birch_log", "calcite", "diamond_ore", "dripstone_block", "gold_ore", "grass_block", "moss_block", "iron_ore", "oak_log", "podzol", "purpur_block", "redstone_ore", "stone", "tuff"}
+	set entities to {"acacia_button", "acacia_door", "acacia_fence", "acacia_fence_gate", "acacia_hanging_sign", "acacia_leaves", "acacia_pressure_plate", "acacia_sapling", "acacia_sign", "acacia_slab", "acacia_stairs", "acacia_trapdoor", "acacia_wall_hanging_sign", "acacia_wall_sign", "activator_rail", "allium"}
 
 	-- Launch Minecraft to the front
 	
