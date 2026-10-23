@@ -1,7 +1,7 @@
 tell application "System Events"
 	
-	set blocks to {"acacia_log", "amethyst_block", "ancient_debris", "andesite", "bamboo_block", "basalt", "birch_log", "black_concrete", "blackstone", "black_terracotta", "black_wool", "calcite", "diamond_ore", "dripstone_block", "gold_ore", "grass_block", "moss_block", "iron_ore", "oak_log", "podzol", "purpur_block", "redstone_ore", "stone", "tuff"}
-	set entities to {"acacia_button", "acacia_door", "acacia_sapling", "beetroots", "big_dripleaf", "birch_sapling", "lava_bucket", "water_bucket"}
+	set blocks to {"acacia_log", "acacia_planks", "amethyst_block", "ancient_debris", "andesite", "bamboo_block", "basalt", "birch_log", "black_concrete", "blackstone", "black_terracotta", "black_wool", "calcite", "diamond_ore", "dripstone_block", "gold_ore", "grass_block", "moss_block", "iron_ore", "oak_log", "podzol", "purpur_block", "redstone_ore", "stone", "tuff"}
+	set entities to {"acacia_button", "acacia_door", "acacia_fence", "acacia_fence_gate", "acacia_hanging_sign", "acacia_leaves", "acacia_pressure_plate", "acacia_sapling", "beetroots", "big_dripleaf", "birch_sapling", "lava_bucket", "water_bucket"}
 
 	-- Launch Minecraft to the front
 	
@@ -17,9 +17,9 @@ tell application "System Events"
 	key code 53
 	delay 0.5
 	
-	repeat with x from -256 to 256 by 5
-		repeat with y from -64 to 256 by 5
-			repeat with z from -256 to 256 by 5
+	repeat with x from 0 to 256 by 4
+		repeat with y from 0 to 256 by 4
+			repeat with z from 0 to 256 by 4
 				-- Open chat Enter == 36 OR T == 17
 				key code 36
 				delay 0.5
