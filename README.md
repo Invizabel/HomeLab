@@ -1,5 +1,8 @@
 ## Tools that allows you to run home lab services!
 
+#### AI:
+* Ollama (Ollama + OpenWebUI)
+
 #### Assets:
 * Docker (container)
 * ha2busybar (push home assistant data to Busy Bar)
