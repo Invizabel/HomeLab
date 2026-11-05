@@ -2,6 +2,7 @@ import os
 
 os.system("sudo apt update")
 os.system("wget https://raw.githubusercontent.com/Invizabel/VolorSavanna/refs/heads/main/Volor%20Savanna/Web/index.html")
+os.system("wget https://raw.githubusercontent.com/Invizabel/VolorSavanna/refs/heads/main/Volor%20Savanna/Web/script.js")
 os.system("wget https://raw.githubusercontent.com/Invizabel/HomeLab/refs/heads/main/Assets/docker_setup.py")
 os.system("python3 docker_setup.py")
 os.system("touch dockerfile")
@@ -10,6 +11,7 @@ os.system('echo "RUN apt update && apt upgrade -y && apt install nginx -y && apt
 os.system('echo "EXPOSE 80" >> dockerfile')
 os.system('echo "EXPOSE 22" >> dockerfile')
 os.system('echo "COPY index.html /var/www/html/index.html" >> dockerfile')
+os.system('echo "COPY script.js /var/www/html/index.html" >> dockerfile')
 os.system('echo \'CMD ["nginx", "-g", "daemon off;"]\' >> dockerfile')
 os.system("sudo docker build -t volorsavanna:latest .")
 os.system("sudo docker run -d --name=savanna --restart always -p 80:80 volorsavanna:latest")
