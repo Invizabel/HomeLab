@@ -28,6 +28,7 @@
 * SWOTGB (Gameboy)
 * Javatari (Atari 2600)
 * Retroarch (General)
+* RetroAssembly (General)
 * WebЯcade (General)
 
 #### Games:
